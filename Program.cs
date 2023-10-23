@@ -74,15 +74,15 @@
             }
             */
 
-            Console.WriteLine("Цикл while");
-            int k = 0;
+            Console.WriteLine("Цикл do ..while");
+            int t = 0;
 
-            while (k < 3)
+            do
             {
-                Console.WriteLine(k);
+                Console.WriteLine(t);
 
                 Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
-                
+
                 switch (Console.ReadLine())
                 {
                     case "red":
@@ -112,9 +112,10 @@
                         Console.WriteLine("Your color is yellow!");
                         break;
                 }
-                k++;
+                t++;
+            } while (t < 3);
             }
         }
     }
-}
+
 
